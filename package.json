@@ -1,6 +1,6 @@
 {
   "name": "vuetify-vuejs-messagedialog",
-  "version": "0.0.10",
+  "version": "0.0.1",
   "description": "Vuetify VueJS message dialog Component",
   "main": "dist/index.js",
   "dependencies": {},
