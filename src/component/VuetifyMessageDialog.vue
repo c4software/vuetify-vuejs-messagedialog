@@ -9,7 +9,7 @@
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn color="green" @click="closeAction" flat :loading="this.loading">{{closeText}}</v-btn>
+        <v-btn :color="closeColor" @click="closeAction" flat :loading="this.loading">{{closeText}}</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -17,7 +17,7 @@
 
 <script>
   export default {
-    props: ["title", "text", "closeText", "value"],
+    props: ["title", "text", "closeText", "value", "closeColor"],
     data(){
       return {
         loading: false,

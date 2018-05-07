@@ -19,6 +19,7 @@ npm install vuetify-vuejs-messagedialog --save
     title="Oh Snap !"
     text="Sorry but, an error as occured…"
     closeText="Close"
+    closeColor="red"
     v-on:closeAction="() => this.showConfirm = false"
   />
 </template>
