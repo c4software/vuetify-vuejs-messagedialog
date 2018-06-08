@@ -9,7 +9,7 @@ module.exports = merge(require('./webpack.base'), {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
-        library: 'firebase-uploader',
+        library: 'vuetify-vuejs-messageDialog',
         libraryTarget: 'umd',
     },
 
