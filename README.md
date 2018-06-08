@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/vuetify-vuejs-messagedialog.svg)](https://www.npmjs.com/package/vuetify-vuejs-messagedialog)
 
-Vuetify VueJS message dialog Component.
+Vuetify VueJS message dialog Component with Promise support
 
 ## Installation
 
