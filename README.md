@@ -10,7 +10,52 @@ Vuetify VueJS message dialog Component.
 npm install vuetify-vuejs-messagedialog --save
 ```
 
-## Usage
+## Quick Promise Usage
+
+```javascript
+this.$vuetifyMessageDialog.open("Example Title", "Example Content", "OK", "green").then(state => {
+  console.log(state);
+});
+```
+
+## Detailed Promise Usage
+
+Enable the plugin in your Project
+
+```javascript
+<script>
+  import Vue from 'vue';
+  import messageDialog from 'vuetify-vuejs-messagedialog';
+  Vue.use(messageDialog);
+
+  // …
+</script>
+```
+
+Use the plugin in any Vue file :
+
+```vue
+<template>
+…
+</template>
+
+<script>
+export default{
+  name: "…",
+  // …
+  methods: {
+    sample: function(){
+      this.$vuetifyMessageDialog.open("Example Title", "Example Content", "OK", "green").then(state => {
+        console.log(state);
+      });
+    }
+  }
+}
+</script>
+
+```
+
+## Component Usage
 
 ```vue
 <template>
@@ -30,7 +75,7 @@ npm install vuetify-vuejs-messagedialog --save
   Vue.use(messageDialog);
 
   export default {
-    name: 'example'
+    name: 'example',
     data(){
       return {
         "showConfirm": true
