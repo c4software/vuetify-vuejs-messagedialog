@@ -41,15 +41,12 @@
       setCloseColor: function(color){
         this.state.closeColor = color;
       },
-      setPromise: function(promiseRejecter, promiseResolver){
+      setPromiseHandler: function(promiseRejecter, promiseResolver){
         this.state.promiseRejecter = promiseRejecter;
         this.state.promiseResolver = promiseResolver;
       },
       show: function(){
         this.state.isOpen = true;
-      },
-      hide: function(){
-        this.state.isOpen = false;
       },
       emmitClose: function(){
         if(this.state.promiseResolver){
