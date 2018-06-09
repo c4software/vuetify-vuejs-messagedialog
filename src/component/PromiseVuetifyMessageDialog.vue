@@ -29,6 +29,28 @@
       commit: function(newState) {
         this.state = newState;
       },
+      setTitle: function(title){
+        this.state.title = title;
+      },
+      setText: function(text){
+        this.state.text = text;
+      },
+      setCloseText: function(text){
+        this.state.closeText = text;
+      },
+      setCloseColor: function(color){
+        this.state.closeColor = color;
+      },
+      setPromise: function(promiseRejecter, promiseResolver){
+        this.state.promiseRejecter = promiseRejecter;
+        this.state.promiseResolver = promiseResolver;
+      },
+      show: function(){
+        this.state.isOpen = true;
+      },
+      hide: function(){
+        this.state.isOpen = false;
+      },
       emmitClose: function(){
         if(this.state.promiseResolver){
           this.state.promiseResolver(true);
