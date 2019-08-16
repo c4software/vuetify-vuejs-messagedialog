@@ -9,7 +9,7 @@
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn :color="closeColor" @click="closeAction" flat :loading="this.loading">{{closeText}}</v-btn>
+        <v-btn :color="closeColor" @click="closeAction" text :loading="this.loading">{{closeText}}</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
